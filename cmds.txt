@@ -1,0 +1,4 @@
+
+ar -crs ./lib/static/poli.lib ./obj/apoth.o ./obj/area.o ./obj/lsides.o ./obj/nsides.o ./obj/perim.o
+
+g++ test.cc -o app/static -I ./include/poli.lib -L ./lib/static -lpoli
