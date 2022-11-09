@@ -23,7 +23,9 @@ La biblioteca retorna el área y perimetro de cualquier polígono regular
  
  ar crs ./lib/static/poli.lib ./obj*.o
  
- g++ final -o app/static -I ./lib/include -L ./lib/static -poli
+ g++ test.cc -o app/static -I ./lib/include -L ./lib/static -poli
+g++ test.cc -o app/test -I ./lib/include -L ./lib/static -lpoli
+ g++ test.cc -o ./app -I ./include/poli -L ./lib/static/poli.lib -lpoli
 
 ./app/static.exe
 
@@ -47,7 +49,7 @@ La biblioteca retorna el área y perimetro de cualquier polígono regular
 
 5.- Usar comandos para conseguir cabecera, están arriba
 
-
+6.- 
  
 
 
