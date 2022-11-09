@@ -25,7 +25,9 @@ La biblioteca retorna el área y perimetro de cualquier polígono regular
  ar -crs ./lib/static/poli.lib ./obj/apoth.o ./obj/area.o ./obj/lsides.o ./obj/nsides.o ./obj/perim.o
  
  g++ test.cc -o app/static -I ./lib/include -L ./lib/static -poli
-g++ test.cc -o app/test -I ./lib/include -L ./lib/static -lpoli
+ 
+ g++ test.cc -o app/test -I ./lib/include -L ./lib/static -lpoli
+ 
  g++ test.cc -o ./app -I ./include/poli -L ./lib/static/poli.lib -lpoli
 
 ./app/static.exe
