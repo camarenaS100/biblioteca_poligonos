@@ -52,7 +52,8 @@ g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 ![image](https://user-images.githubusercontent.com/66481799/200756573-decd38d1-07ed-46d6-aeb7-69bfcf60be7a.png)
 
 
-![image](https://user-images.githubusercontent.com/66481799/200756702-47111ace-3506-4839-a2b0-d696eed4e542.png)
+![image](https://user-images.githubusercontent.com/66481799/200965514-377498b5-0798-48d1-a600-439bde8fe749.png)
+
 Árbol del directorio de ésta biblioteca
 
 3.- Hacer archivo cabecera,  
