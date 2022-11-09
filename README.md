@@ -22,6 +22,7 @@ La biblioteca retorna el área y perimetro de cualquier polígono regular
  # Código de biblioteca estática :
  
  ar crs ./lib/static/poli.lib ./obj*.o
+ ar -crs ./lib/static/poli.lib ./obj/apoth.o ./obj/area.o ./obj/lsides.o ./obj/nsides.o ./obj/perim.o
  
  g++ test.cc -o app/static -I ./lib/include -L ./lib/static -poli
 g++ test.cc -o app/test -I ./lib/include -L ./lib/static -lpoli
@@ -29,10 +30,20 @@ g++ test.cc -o app/test -I ./lib/include -L ./lib/static -lpoli
 
 ./app/static.exe
 
+# Código de biblioteca dinámica :
+
+g++ -shared -o ./lib/dynamic/poli.dll ./obj/apoth.o ./obj/area.o ./obj/lsides.o ./obj/nsides.o ./obj/perim.o
+
+g++ -c test.cc
+
+g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
+
+./lib/dynamic/dynamic.exe
+
 
  ## Proceso 
  
-1.- Saber qué hará la biblioteca y hacer sus códigos de cada función dentro de la biblioteca.
+1.- Saber qué hará la biblioteca y hacer códigos de cada función.
 2.- Hacer una carpeta de carpetas con la estructura de :
 
 ![image](https://user-images.githubusercontent.com/66481799/200756573-decd38d1-07ed-46d6-aeb7-69bfcf60be7a.png)
@@ -49,7 +60,13 @@ g++ test.cc -o app/test -I ./lib/include -L ./lib/static -lpoli
 
 5.- Usar comandos para conseguir cabecera, están arriba
 
-6.- 
+6.- Creación de la biblioteca estática 
+
+7.- Compilación y ejecución del archivo exe
+
+8.- Creación de la biblioteca dinámica 
+
+
  
 
 
