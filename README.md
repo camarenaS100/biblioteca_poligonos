@@ -37,7 +37,7 @@ g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -l ./include
 ![image](https://user-images.githubusercontent.com/66481799/200756573-decd38d1-07ed-46d6-aeb7-69bfcf60be7a.png)
 
 
-![image](https://user-images.githubusercontent.com/66481799/200965514-377498b5-0798-48d1-a600-439bde8fe749.png)
+![image](https://user-images.githubusercontent.com/66481799/203774219-dd4313f8-42e9-45a5-94d3-9981e01d2f80.png)
 
 Árbol del directorio de ésta biblioteca
 
