@@ -5,43 +5,28 @@ La biblioteca retorna el área y perimetro de cualquier polígono regular
 
 # Código Objeto :
 
- gcc -fPIC -c ./src/apoth.cc -o ./obj/apoth.o -I ./include
- 
- 
- gcc -fPIC -c ./src/area.cc -o ./obj/area.o -I ./include
- 
- 
- gcc -fPIC -c ./src/perim.cc -o ./obj/perim.o -I ./include
- 
- 
- gcc -fPIC -c ./src/nsides.cc -o ./obj/nsides.o -I ./include
- 
- 
- gcc -fPIC -c ./src/lsides.cc -o ./obj/lsides.o -I ./include
+g++ -c ./src/*.cpp
+
+g++ -c apoth.cpp area.cpp lsides.cpp nsides.cpp perim.cpp
+
  
  # Código de biblioteca estática :
- 
- ar crs ./lib/static/poli.lib ./obj*.o
- 
- ar -crs ./lib/static/poli.lib ./obj/apoth.o ./obj/area.o ./obj/lsides.o ./obj/nsides.o ./obj/perim.o
- 
- g++ test.cc -o app/static -I ./lib/include -L ./lib/static -poli
- 
- g++ test.cc -o app/test -I ./lib/include -L ./lib/static -lpoli
- 
- g++ test.cc -o ./app -I ./include/poli -L ./lib/static/poli.lib -lpoli
+
+ar -rvs ./lib/static/poli.a ./obj/*.o
+
+g++ test.cpp -o ./app/prueba ./src/*.cc
 
 ./app/static.exe
 
+
 # Código de biblioteca dinámica :
 
-g++ -shared -o ./lib/dynamic/poli.dll ./obj/apoth.o ./obj/area.o ./obj/lsides.o ./obj/nsides.o ./obj/perim.o
+g++ -shared -o ./lib/dynamic/poli.dll  ./obj/*.o
 
-g++ -c test.cc
+g++ -c test.cpp
 
-g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
+g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -l ./include/poli
 
-./lib/dynamic/dynamic.exe
 
 
  ## Proceso 
