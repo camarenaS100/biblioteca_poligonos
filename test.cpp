@@ -1,5 +1,5 @@
 #include <iostream>
-#include "./lib/static/poli.lib"
+#include "./include/poli"
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
 		std::cin>> ap;
 		auxi = area(p,ap);
 		std::cout<<"el area es de : "<<aux;	
-
+		std::cout<<"\n";		
 	}
 	else if(aux == 2)
 	{
@@ -26,6 +26,7 @@ int main()
 		std::cin>> l;
 		auxi = perim(n,l);
 		std::cout<<"el perimetro es de : "<<aux;		
+		std::cout<<"\n";
 	}
 	else if(aux == 3)
 	{
@@ -35,6 +36,7 @@ int main()
 		std::cin>> p;
 		auxi = apoth(ar,p);
 		std::cout<<"el apotema es de : "<<aux;
+		std::cout<<"\n";
 	}
 	else if(aux == 4)
 	{
@@ -44,6 +46,7 @@ int main()
 		std::cin>> l;
 		auxi = nsides(p,l);
 		std::cout<<"el número de lados es de : "<<aux;	
+		std::cout<<"\n";
 	}
 	else if(aux == 5)
 	{
@@ -53,10 +56,11 @@ int main()
 		std::cin>> n;
 		auxi = nsides(p,n);
 		std::cout<<"el largo de los lados es de : "<<aux;	
+		std::cout<<"\n";
 	}
 	else 
 	{
-		std::cout<<"la opción no existe";
+		std::cout<<"la opción no existe\n";
 	}
 	return 0; 
 }

@@ -1,4 +1,4 @@
-#include "poli"
+#include "../include/poli"
 
 float apoth(float& ar, float& p)
 {

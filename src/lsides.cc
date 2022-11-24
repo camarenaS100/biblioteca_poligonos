@@ -1,4 +1,4 @@
-#include "poli"
+#include "../include/poli"
 
  float lsides(float& p, float& n)
 {
