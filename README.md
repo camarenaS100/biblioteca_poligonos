@@ -14,9 +14,10 @@ g++ -c apoth.cpp area.cpp lsides.cpp nsides.cpp perim.cpp
 
 ar -rvs ./lib/static/poli.a ./obj/*.o
 
-g++ test.cpp -o ./app/prueba ./src/*.cc
+g++ test.cpp -o ./app/prueba ./src/*.cc    :    compilación con enlace, creación de ejecutable de biblioteca estática
 
 ./app/static.exe
+
 
 
 # Código de biblioteca dinámica :
