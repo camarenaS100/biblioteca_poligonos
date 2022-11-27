@@ -5,11 +5,22 @@ La biblioteca retorna el área y perimetro de cualquier polígono regular
 
 # Código Objeto :
 
-g++ -c ./src/*.cpp
 
-g++ -c apoth.cpp area.cpp lsides.cpp nsides.cpp perim.cpp
+g++ -fPIC -c ./src/apoth.cpp -o ./obj/apoth.o -I ./include
 
- 
+g++ -fPIC -c ./src/area.cpp -o ./obj/area.o -I ./include
+
+g++ -fPIC -c ./src/perim.cpp -o ./obj/perim.o -I ./include
+
+g++ -fPIC -c ./src/nsides.cpp -o ./obj/nsides.o -I ./include
+
+g++ -fPIC -c ./src/lsides.cpp -o ./obj/lsides.o -I ./include
+
+
+
+g++ -fPIC -c ./src/*.cpp -o ./obj/*.o -I ./include   - no se puede usar
+
+
  # Código de biblioteca estática :
 
 ar -rvs ./lib/static/poli.a ./obj/*.o
