@@ -16,8 +16,9 @@ g++ -fPIC -c ./src/nsides.cpp -o ./obj/nsides.o -I ./include
 
 g++ -fPIC -c ./src/lsides.cpp -o ./obj/lsides.o -I ./include
 
+--
 
-
+Nota
 
 g++ -fPIC -c ./src/*.cpp -o ./obj/*.o -I ./include   - no se puede usar
 
