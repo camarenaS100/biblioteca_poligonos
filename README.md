@@ -25,7 +25,36 @@ g++ -fPIC -c ./src/*.cpp -o ./obj/*.o -I ./include   - no se puede usar
 
  # Código de biblioteca estática :
 
-ar -rvs ./lib/static/poli.a ./obj/*.o
+- Paso 1 : Opción 1 : 
+ar crs ./lib/static/poli.a ./obj/*.o
+
+- Paso 1 : Opción 2 :
+ar rvs ./lib/static/poli.a ./obj/*.o
+
+- Paso 2 : Opciones :
+
+g++ test.cpp -o ./app/static -I ./lib/include -L ./lib/static -lpoli
+
+g++ test.cpp -o ./app/static -I ./lib/include -L ./lib/static/poli.a -lpoli
+
+g++ test.cpp -o ./app/static -I ./include -L ./lib/static -lpoli
+
+g++ test.cpp -o ./app/static -I ./include -L ./lib/static/poli.a -lpoli
+
+g++ test.cpp -o ./app/static -I ./include -L ./lib/static -lpoli
+
+g++ test.cpp -o ./app/static -I ./include -L ./lib/static 
+
+g++ test.cpp -o ./app/static -I ./include -L ./lib/static/poli.a
+
+
+
+
+Combinaciones intentadas:
+
+P1OP1 P2OP1 P3OP1: 
+
+ar crs ./lib/static/poli.a ./obj/*.o
 
 g++ test.cpp -o ./app/prueba ./src/*.cc    :    
 compilación con enlace, creación de ejecutable de biblioteca estática
