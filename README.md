@@ -1,5 +1,5 @@
 # biblioteca_poligonos
-La biblioteca retorna el área y perimetro de cualquier polígono regular 
+La biblioteca retorna el área, perimetro, cantidad de lados, longitud de lados, y apotema de cualquier polígono regular 
 
 ## Comandos usados ##
 
