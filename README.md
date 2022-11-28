@@ -37,12 +37,13 @@ g++ test.cpp -o ./app/static -I ./lib/include -L ./lib/static -lpoli
 
 # Código de biblioteca dinámica :
 
-g++ -shared -o ./lib/dynamic/poli.dll  ./obj/*.o
+- Paso 1 : Detalle, para que funcione la librería tiene que ser nombrada lib"x".so, en éste caso libpoli.so
+
+g++ -shared -o ./lib/dynamic/libpoli.so  ./obj/*.o
 
 g++ -c test.cpp
 
-g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -l ./include/poli
-
+g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 
 
  ## Proceso 
