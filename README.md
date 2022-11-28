@@ -45,6 +45,9 @@ g++ -c test.cpp
 
 g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 
+./app/dynamic.exe
+
+
  ## Proceso 
  
 1.- Saber qué hará la biblioteca y hacer códigos de cada función.
