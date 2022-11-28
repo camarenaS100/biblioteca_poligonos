@@ -48,6 +48,7 @@ g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
  ## Proceso 
  
 1.- Saber qué hará la biblioteca y hacer códigos de cada función.
+
 2.- Hacer una carpeta de carpetas con la estructura de :
 
 ![image](https://user-images.githubusercontent.com/66481799/200756573-decd38d1-07ed-46d6-aeb7-69bfcf60be7a.png)
