@@ -43,8 +43,7 @@ g++ -shared -o ./lib/dynamic/libpoli.so  ./obj/*.o
 
 g++ -c test.cpp
 
-g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
-
+g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 
  ## Proceso 
  
