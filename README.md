@@ -53,8 +53,7 @@ g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 
 ![image](https://user-images.githubusercontent.com/66481799/200756573-decd38d1-07ed-46d6-aeb7-69bfcf60be7a.png)
 
-
-![image](https://user-images.githubusercontent.com/66481799/203774219-dd4313f8-42e9-45a5-94d3-9981e01d2f80.png)
+![image](https://user-images.githubusercontent.com/66481799/204228618-13e74a3d-74f1-419c-ad3c-1c3f1d8d8896.png)
 
 Árbol del directorio de ésta biblioteca
 
@@ -71,6 +70,8 @@ g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 7.- Compilación y ejecución del archivo exe
 
 8.- Creación de la biblioteca dinámica 
+
+9.- Ejecución del archivo exe con biblioteca dinámica
 
 
  
