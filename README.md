@@ -53,7 +53,7 @@ g++ -o lib/dynamic/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 
 ![image](https://user-images.githubusercontent.com/66481799/200756573-decd38d1-07ed-46d6-aeb7-69bfcf60be7a.png)
 
-![image](https://user-images.githubusercontent.com/66481799/204228618-13e74a3d-74f1-419c-ad3c-1c3f1d8d8896.png)
+![image](https://user-images.githubusercontent.com/66481799/204229597-50d30758-d3fe-4202-9b7e-a26d2730e8bf.png)
 
 Árbol del directorio de ésta biblioteca
 
