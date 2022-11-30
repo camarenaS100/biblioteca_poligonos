@@ -77,7 +77,17 @@ g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 9.- Ejecución del archivo exe con biblioteca dinámica
 
 
+
+# Más información del tema :
+
+https://docs.google.com/document/d/1G8oReRtNNPqdNPNW9BmuINHysaPYVWAJbhu9thzPVeg/edit?usp=sharing
  
 
+# Infografía :
 
+
+![Proceso de compilación](https://user-images.githubusercontent.com/66481799/204932968-b45aa069-7c0f-4bf4-9f0b-fe3441be4263.png)
+
+
+https://www.canva.com/design/DAFTd9LYZR4/FcLaXUSvzCJmwO9GCsSr0w/edit?utm_content=DAFTd9LYZR4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
  
