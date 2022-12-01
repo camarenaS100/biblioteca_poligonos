@@ -1,6 +1,14 @@
 # biblioteca_poligonos
 La biblioteca retorna el área, perimetro, cantidad de lados, longitud de lados, y apotema de cualquier polígono regular 
 
+# Sobre las funciones de la biblioteca :
+
+De los polígonos regulares podemos trabajar con muchas aplicaciones de usos diferentes, la explicación de cómo conseguir los elementos usados en éste repositorio para un polígono están en el siguiente pdf : 
+
+[area_poligo_regular.pdf](https://github.com/camarenaS100/biblioteca_poligonos/files/10128192/area_poligo_regular.pdf)
+
+Igualmente, aquí está la liga : https://mep.go.cr/sites/default/files/recursos/recursos-interactivos/educ_abierta/mate_primaria/areas/geometria/area_poligo_regular.pdf
+
 ## Comandos usados ##
 
 # Código Objeto :
