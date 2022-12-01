@@ -62,7 +62,7 @@ g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 
 3.- Hacer archivo cabecera,  
  
- ![image](https://user-images.githubusercontent.com/66481799/200757415-7b7702bf-cd4c-4523-ac1f-725f7f714f10.png)
+![image](https://user-images.githubusercontent.com/66481799/204933711-637309b2-75a8-404b-ab8f-bae3a2346efb.png)
 
 4.- Usar comandos para conseguir el código objeto en la terminal, los comandos están arriba.
 
