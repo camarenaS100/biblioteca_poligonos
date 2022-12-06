@@ -1,0 +1,41 @@
+#if !defined(POLI)
+#define POLI
+
+/** @brief Calculates area of a regular polygon
+ * @param p The perimeter
+ * @param ap The apothem
+ * @returns p*ap/2
+ */
+float area(float& p, float& ap);
+
+/** @brief Calculates perimeter of a regular polygon
+ * @param n The number of sides
+ * @param l The length of a side
+ * @return n*l
+ */
+float perim(float& n, float& l);
+
+/** @brief Calculates number of sides of a regular polygon
+ * @param p The perimeter
+ * @param l The length of a side
+ * @return p/l
+ */
+float nsides(float& p, float& l);
+
+/** @brief Calculates length of sides of a regular polygon
+ * @param p The perimeter
+ * @param n The number of sides
+ * @return p/n
+ */
+float lsides(float& p, float& n);
+
+/** @brief Calculates the apothem of a regular polygon
+ * @param ar The area
+ * @param p The perimeter
+ * @return ar*2/p
+ */
+float apoth(float& ar, float& p);
+
+#endif
+
+
