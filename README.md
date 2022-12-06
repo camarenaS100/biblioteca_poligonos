@@ -3,7 +3,7 @@ La biblioteca retorna el área, perimetro, cantidad de lados, longitud de lados,
 
 # Sobre las funciones de la biblioteca :
 
-De los polígonos regulares podemos trabajar con muchas aplicaciones de usos diferentes, la explicación de cómo conseguir los elementos usados en éste repositorio para un polígono están en el siguiente pdf : 
+De los polígonos regulares podemos trabajar con muchas aplicaciones de usos diferentes, la explicación de cómo conseguir los elementos usados en éste repositorio están en el siguiente pdf : 
 
 [area_poligo_regular.pdf](https://github.com/camarenaS100/biblioteca_poligonos/files/10128192/area_poligo_regular.pdf)
 
