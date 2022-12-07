@@ -39,7 +39,7 @@ ar crs ./lib/static/libpoli.a ./obj/*.o
 
 g++ test.cpp -o ./app/static -I ./lib/include -L ./lib/static -lpoli
 
-./app/static.exe
+./app/static
 
 
 
@@ -53,7 +53,7 @@ g++ -c test.cpp
 
 g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 
-./app/dynamic.exe
+./app/dynamic
 
 
  ## Proceso 
