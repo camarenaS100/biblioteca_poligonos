@@ -65,6 +65,7 @@ ld -lpoli  --verbose
 
 ldd dynamic
 
+![image](https://user-images.githubusercontent.com/66481799/206099778-185ebbd0-ed3b-4c94-9714-b4ebc511bdd6.png)
 
 
  ## Proceso 
