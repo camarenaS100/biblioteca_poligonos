@@ -45,7 +45,7 @@ g++ test.cpp -o ./app/static -I ./lib/include -L ./lib/static -lpoli
 
 # Código de biblioteca dinámica :
 
-- Paso 1 : Detalle, para que funcione la librería tiene que ser nombrada lib"x".so, en éste caso libpoli.so
+-  Detalle, para que funcione la librería tiene que ser nombrada lib"x".so, en éste caso libpoli.so
 
 g++ -shared -o ./lib/dynamic/libpoli.so  ./obj/*.o
 
@@ -56,12 +56,12 @@ g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 ./app/dynamic
 
 
-Para poder usar la biblioteca debes copiarla a las rutas del enlazador,
+-  Para poder usar la biblioteca debes copiarla a las rutas del enlazador,
 puedes observar cuáles rutas revisa éste con la bandera --verbose en nuestro caso, así :
 
 ld -lpoli  --verbose
 
-y también puedes observar qué bibliotecas usa un ejecutable con el comando "ldd" así :
+-  y también puedes observar qué bibliotecas usa un ejecutable con el comando "ldd" así :
 
 ldd dynamic
 
