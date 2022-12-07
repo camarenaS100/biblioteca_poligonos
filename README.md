@@ -61,6 +61,12 @@ puedes observar cuáles rutas revisa éste con la bandera --verbose en nuestro c
 
 ld -lpoli  --verbose
 
+- Que entre otras cosas, muestra lo siguiente : 
+
+![image](https://user-images.githubusercontent.com/66481799/206101181-fbd65bf5-258a-4b53-87ab-d74827216d4b.png)
+
+
+
 -  y también puedes observar qué bibliotecas usa un ejecutable con el comando "ldd" así :
 
 ldd dynamic
