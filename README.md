@@ -57,7 +57,7 @@ g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 
 
 -  Para poder usar la biblioteca debes copiarla a las rutas del enlazador, (comando en el apartado de Proceso) 
-puedes observar cuáles rutas revisa éste con la bandera --verbose en nuestro caso, así :
+puedes observar cuáles rutas revisa el enlazador con la bandera --verbose en nuestro caso, así :
 
 ld -lpoli  --verbose
 
