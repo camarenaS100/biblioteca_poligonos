@@ -41,7 +41,8 @@ g++ test.cpp -o ./app/static -I ./lib/include -L ./lib/static -lpoli
 
 ./app/static
 
-
+- Si se quisiera forzar el enlazado dinámica o estáticamente de unas bibliotecas pero no de todas, acá hay una explicación de ello:
+https://stackoverflow.com/questions/3698321/g-linker-force-static-linking-if-static-library-exists
 
 # Código de biblioteca dinámica :
 
