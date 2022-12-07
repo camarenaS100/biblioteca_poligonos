@@ -56,6 +56,17 @@ g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 ./app/dynamic
 
 
+Para poder usar la biblioteca debes copiarla a las rutas del enlazador,
+puedes observar cuáles rutas revisa éste con la bandera --verbose en nuestro caso, así :
+
+ld -lpoli  --verbose
+
+y también puedes observar qué bibliotecas usa un ejecutable con el comando "ldd" así :
+
+ldd dynamic
+
+
+
  ## Proceso 
  
 1.- Saber qué hará la biblioteca y hacer códigos de cada función.
@@ -82,7 +93,11 @@ g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 
 8.- Creación de la biblioteca dinámica 
 
-9.- Ejecución del archivo exe con biblioteca dinámica
+9.- Copiado del archivo.so ejecutable al directorio del enlazador 
+
+- Ésto se hace con el comando "sudo cp ./lib/dynamic/libpoli.so /usr/lib"
+
+10.- Ejecución del archivo exe con biblioteca dinámica
 
 
 
