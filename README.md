@@ -56,7 +56,7 @@ g++ -o ./app/dynamic test.o -I ./lib/include -L ./lib/dynamic -lpoli
 ./app/dynamic
 
 
--  Para poder usar la biblioteca debes copiarla a las rutas del enlazador,
+-  Para poder usar la biblioteca debes copiarla a las rutas del enlazador,  
 puedes observar cuáles rutas revisa éste con la bandera --verbose en nuestro caso, así :
 
 ld -lpoli  --verbose
@@ -66,6 +66,11 @@ ld -lpoli  --verbose
 ldd dynamic
 
 ![image](https://user-images.githubusercontent.com/66481799/206099778-185ebbd0-ed3b-4c94-9714-b4ebc511bdd6.png)
+
+
+- De no copiar la biblioteca al directorio del enlazador se vería lo siguiente al ejecutar éste comando:
+
+![image](https://user-images.githubusercontent.com/66481799/206099954-18cf200c-19f4-443a-b541-98c22dedd8ff.png)
 
 
  ## Proceso 
